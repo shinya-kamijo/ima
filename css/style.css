@@ -1,0 +1,366 @@
+.table {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+.main {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	text-align: center;
+	line-height: 0.8;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ボディー全体 */
+.main h2 {
+	font-family: 'Dancing Script', cursive;
+	font-size:40px;
+}
+
+.main p {    
+	font-family:sans-serif;
+	color:#555555
+}
+
+
+/* メニュー */
+.logo {
+	margin:20px 300px 0 60px ;
+	list-style: none;
+}
+
+.site-header {
+	background: rgba(255,255,255,0.5);
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+	/* transition: .5s; */
+
+	position: fixed; /* 要素の位置を固定 */
+	right: 0; /* メニュー位置を画面の一番右に指定 */
+	border-bottom: 1px solid gray; /* ボーダーつけ */
+}
+
+.site-header.transform{
+	/* background: rgba(255,255,255,0.9); */
+	background:white;
+	/* padding: 5px; */
+}
+
+
+
+.menu li {
+	font-size: 14px;
+	float: left;
+	list-style: none;
+	margin: 0 20px 0;	
+	line-height: 40px;
+} 
+.menu1{ 
+	color: black;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+}
+.menu1::after {
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: pink;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+.menu1:hover::after {
+	bottom: -2px;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/* Top */
+.hero {
+	padding:60px 0 0;
+}
+
+
+/* about */
+.about {
+	padding:50px 0 100px ;
+	background: #EEEEEE;
+}
+
+/* infomation */
+.info {]
+	font-size: 14px;
+	padding:80px 0 40px ;
+
+}
+
+.wrap{
+	display: flex;
+	justify-content: center;
+}
+.wrap a {
+	color: black;
+	text-decoration: none;
+}
+.wrap a:hover {
+	text-decoration: underline;
+}
+
+.box1 {
+	text-align: left;
+	margin:0px 10px 0;
+}
+
+.box1 p {
+	font-size:12px;
+}
+
+
+
+/* ボタンアイコン */
+.button {
+	padding:80px 0 40px ;
+	text-align: center;
+}
+
+.btn-gradient-radius {
+	display: inline-block;
+	padding: 7px 20px;
+	border-radius: 25px;
+	text-decoration: none;
+	color: #FFF;
+	background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+	transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+	background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+
+/* Blog */
+.blog {
+	padding:80px 0 40px ;
+}
+
+/* Brand */
+.brand {
+	padding:80px 0 20px ;	
+}
+
+.brand_detail {
+	font-size: 30px;
+	font-family: -apple-system, BlinkMacSystemFont, "游ゴシック体", YuGothic, "Yu Gothic M", "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.brand1 {
+	color:	#65D8FF;
+	text-align: center;
+	margin:0px 20px 0;
+}
+.brand2 {
+	color:#32FF65;
+	text-align: center;
+	margin:0px 20px 0;
+}
+.brand3 {
+	color:	#00FFBF;
+	text-align: center;
+	margin:0px 20px 0;
+}
+.brand4 {
+	color:	#99CCFF;
+	text-align: center;
+	margin:0px 20px 0;
+}
+.brand5 {
+	color:#CCCCCC;
+	text-align: center;
+	margin:0px 20px 0;
+}
+
+
+/* service */
+.service {
+	font-size:14px;
+	font-family:sans-serif;
+	color:#555555
+	  justify-content: space-around;
+ }
+
+.service1 {
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content:center;
+	align-items:center;
+	width: 60%;
+	margin-left: 250px;
+	margin-bottom: 50px;
+}
+.service1 img {
+	width: 300px;
+	margin: 0  0 0 100px;
+}
+
+.service2 {
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items:center;
+	width: 60%;	
+	margin-left: 250px;
+
+	margin-bottom: 50px;
+}
+.service2 img {
+	width: 300px;
+	margin: 0 100px 0 0;
+}
+
+/* company */
+.company {
+	padding:80px 0 40px ;
+	text-align: center;
+}
+.company h2 {
+	font-family: 'Dancing Script', cursive;
+	font-size:40px;
+}
+.detail  {
+	font-family:sans-serif;
+	text-align: center;
+	list-style: none;
+	line-height: 2.5em;	
+}
+
+/* .table {
+	margin-left: auto;
+	margin-right: auto;
+} */
+.detail_1{
+	background: #EEEEEE;
+}
+.detail_3{
+	background: #EEEEEE;
+}
+.detail_5{
+	background: #EEEEEE;
+}
+
+.detail_6 a {
+	 color:black;
+	text-decoration: none;
+}
+
+
+/* 代表紹介 */
+.ceo {
+	text-align: center;
+
+}
+.contact h2 {
+	text-align: center;
+	padding:80px 0 20px ;
+}
+.merchu {
+	font-size: 24px;
+}
+
+.contact_detail {
+	font-size: 14px;
+}
+
+.instagram a{
+	font-size: 9px;
+	 color:black;
+	text-decoration: none;
+}
+
+.concept {
+	display:flex;
+	margin: auto;
+	flex-direction: row;
+	justify-content:center;
+	align-items:center;
+	width: 80%;
+	 vertical-align: middle;
+	margin-bottom: 100px;
+}
+
+.concept img {
+	padding:0 0 0 30px;
+	width: 40%;
+	height: 40%;
+}
+
+.concept p {
+	text-align: left;
+	font-size: 14px;
+	color:#555555
+	 /* color:black; */
+}
+
+
+
+/* foooter */
+.footer {
+	/* text-align: center; */
+	background: #EEEEEE;
+	width: 100%;
+	padding: 20px 0 0 20px;
+}
+.footer h2 {	
+	font-family: 'Dancing Script', cursive;
+	font-size:40px;
+}
+.footer p {   
+	font-size:12px;
+	font-family:sans-serif;
+	color:#555555
+}
+
+.footer_navi {
+	display: flex;
+	text-align: left;
+	font-size:15px;
+	font-family:sans-serif;
+}
+
+.f-item1{
+ margin: 0 60px 0 20px;
+}
+.f-item2 {
+ margin: 0 40px 0;
+}
+.f-item3 {
+ margin: 0 40px 0;
+}
+.f-item4 {
+ margin: 0 40px 0;
+}
+
+.f-item5 {
+ margin: 0 40px 0;
+}
+
+.f-item6 {
+ margin: 0 60px 0 20px;
+}
+
+
+.footer_add p {   
+	text-align: center;
+	font-size:12px;
+	font-family:sans-serif;
+	color:#555555
+}
+
